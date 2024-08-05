@@ -115,12 +115,36 @@ const freedomFighters = [
 // mapping all name list
 
 const nameCard = document.getElementById("fightersList");
+const namesBtn = document.getElementById("namesBtn");
+const closeBtn = document.getElementById("closeBtn");
+const spinnerCard = document.getElementById("spinnerCard");
 
-window.addEventListener("load", () => {
+namesBtn.addEventListener("click", () => {
+  spinnerCard.style.display = "block";
+  setTimeout(() => {
+    mapFunc();
+    spinnerCard.style.display = "none";
+  }, 1200);
+});
+
+function mapFunc() {
+  nameCard.innerHTML = "";
+
   freedomFighters.map((item, index) => {
     const nameDiv = document.createElement("div");
-    nameDiv.classList.add("col-10", "col-md-3" , "name-card");
+    nameDiv.classList.add("col-10", "col-md-3", "name-card");
     nameDiv.textContent = `${index + 1}. ${item}`;
     nameCard.appendChild(nameDiv);
   });
+  namesBtn.style.pointerEvents = "none";
+  namesBtn.style.opacity = "0.7";
+  closeBtn.style.visibility = "visible";
+}
+
+// removing addEventListener
+closeBtn.addEventListener("click", () => {
+  nameCard.innerHTML = "";
+  namesBtn.style.pointerEvents = "auto";
+  namesBtn.style.opacity = "1";
+  closeBtn.style.visibility = "hidden";
 });
