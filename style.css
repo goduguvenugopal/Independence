@@ -5,7 +5,6 @@
      font-family: Arial, sans-serif;
  }
 
-
  /* home page styling  */
  /* navbar styling  */
 
@@ -37,21 +36,17 @@
          padding-right: 15px;
      }
 
-
      #nav-title {
          border-bottom: 1.5px solid white;
-
      }
 
      #nav-title:hover {
          border: 1.5px solid transparent;
-
      }
 
      .cele-pics {
          width: 100%;
          height: 180px;
-
      }
  }
 
@@ -65,21 +60,17 @@
      #nav-title {
          border: 1.5px solid transparent;
          height: 37px;
-
      }
 
      #nav-title:hover {
          border-bottom: 1.5px solid white;
-
      }
 
      .cele-pics {
          width: 100%;
          height: 180px;
-
      }
  }
-
 
  #header-card {
      background-image: linear-gradient(to right, rgb(255, 103, 3), rgb(255, 255, 255), rgb(4, 106, 56));
@@ -102,7 +93,6 @@
      display: inline-block;
  }
 
-
  .typing-text {
      overflow: hidden;
      text-wrap: nowrap;
@@ -118,7 +108,6 @@
 
  }
 
-
  @keyframes typing {
      from {
          width: 0;
@@ -128,7 +117,6 @@
          width: 100%;
      }
  }
-
 
  .seven-eight {
      font-size: 5rem;
@@ -152,8 +140,6 @@
      margin-bottom: 3rem;
  }
 
-
-
  @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
      .chakra-img {
          max-width: 100%;
@@ -166,10 +152,7 @@
      .chakra-img {
          max-width: 100%;
      }
-
  }
-
-
 
  /* Styles for extra small devices */
  @media (max-width: 575.98px) {
@@ -180,14 +163,10 @@
      .typing-text-main-card {
          height: 200px;
          padding-bottom: 3rem;
-
      }
 
      .typing-text {
-
-
          font-size: 25px;
-
      }
 
      .hor-line {
@@ -197,14 +176,11 @@
 
      .cele-pics {
          width: 100%;
-
-
      }
 
      .cele-pics {
          width: 100%;
          height: 130px;
-
      }
 
      .chakra-img {
@@ -220,25 +196,19 @@
 
      .typing-text-main-card {
          height: 300px;
-
      }
 
      .typing-text {
-
-
          font-size: 30px;
-
      }
 
      .hor-line {
-
          margin-bottom: 2rem;
      }
 
      .cele-pics {
          width: 100%;
          height: 130px;
-
      }
 
      .chakra-img {
@@ -253,26 +223,21 @@
      }
 
      .typing-text {
-
          font-size: 25px;
-
      }
 
      .hor-line {
-
          margin-bottom: 2rem;
      }
 
      .cele-pics {
          width: 100%;
          height: 130px;
-
      }
 
      .chakra-img {
          width: 100%;
      }
-
  }
 
 
@@ -304,7 +269,6 @@
      width: 42px;
      height: 42px;
      border-radius: 50%;
-
      margin-bottom: 7px;
  }
 
@@ -317,6 +281,7 @@
      color: white;
      text-decoration: none;
      margin-right: 20px;
+     cursor: pointer;
  }
 
  .face-icon-2 {
@@ -357,5 +322,5 @@
      color: white;
      cursor: pointer;
      text-decoration: none;
-     
+
  }
