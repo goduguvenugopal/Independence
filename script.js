@@ -1,6 +1,6 @@
 // arrow card function
 window.addEventListener("scroll", function () {
-  const arrow = this.document.getElementById("arrow-card");
+  const arrow = this.document.getElementById("arrow-card2");
   if (window.scrollY > window.innerHeight * 2) {
     arrow.style.display = "block";
   } else {
@@ -8,9 +8,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-// freedom fighters Array list 
-
+// freedom fighters Array list
 const freedomFighters = [
   "Mahatma Gandhi",
   "Jawaharlal Nehru",
@@ -34,7 +32,7 @@ const freedomFighters = [
   "Rajendra Prasad",
   "Aruna Asaf Ali",
   "Ashfaqulla Khan",
-  "Khan Abdul Ghaffar Khan (Bacha Khan)",
+  "Khan Abdul Ghaffar Khan",
   "Birsa Munda",
   "Alluri Sitarama Raju",
   "Ram Prasad Bismil",
@@ -111,5 +109,18 @@ const freedomFighters = [
   "Gopinath Bordoloi",
   "Lala Hansraj Gupta",
   "Jogendranath Mandal",
-  "Dadabhai Naoroji"
+  "Dadabhai Naoroji",
 ];
+
+// mapping all name list
+
+const nameCard = document.getElementById("fightersList");
+
+window.addEventListener("load", () => {
+  freedomFighters.map((item, index) => {
+    const nameDiv = document.createElement("div");
+    nameDiv.classList.add("col-10", "col-md-3" , "name-card");
+    nameDiv.textContent = `${index + 1}. ${item}`;
+    nameCard.appendChild(nameDiv);
+  });
+});
