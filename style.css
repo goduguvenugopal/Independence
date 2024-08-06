@@ -325,3 +325,41 @@
      text-decoration: none;
 
  }
+
+ #countdown-card{
+    position:fixed;
+    background-color:rgba(15, 14, 14, 0.5);
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: none;
+
+ }
+
+#close-count-bt{
+    border:1px solid white;
+    color: white;
+}
+
+#close-count-bt:hover{
+    border:1px solid rgb(231, 38, 8);
+    color: white;
+}
+
+ #count-card{
+    background-color: rgb(2, 2, 38);
+ }
+
+ #countdown{
+    background-image: linear-gradient(to right, rgb(255, 103, 3), rgb(255, 255, 255), rgb(4, 106, 56));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+ }
+
+
+ @media (min-width:768px){
+    #countdown-note{
+        width: 30rem;
+    }
+ }

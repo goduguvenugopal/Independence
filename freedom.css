@@ -37,7 +37,7 @@
 }
 
 
- 
+
 
 /* Styles for extra large devices */
 @media (min-width: 1200px) {
@@ -77,25 +77,28 @@
 
 }
 
-#spinnerCard{
+#spinnerCard {
     display: none;
 }
 
 
 
-.card-img-top{
+.card-img-top {
     height: 14rem;
 }
 
-#card-for-f{
+#card-for-f {
     height: 30rem;
-    
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-#card-for-f:hover{
-    opacity: 0.9;
+
+#card-for-f:hover {
+
     cursor: pointer;
-    
+    transform: scale(1.03);
+
 }
-.card-text{
+
+.card-text {
     font-size: 15px;
 }

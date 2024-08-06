@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-   
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
@@ -61,7 +61,7 @@
         <!-- independence day story  -->
         <div class="row text-center px-2 pt-4">
             <h3 class="fw-bold">Independence Day (India)</h3>
-            <div class="hor-line" ></div>
+            <div class="hor-line"></div>
             <div class="col-12 col-md-12 col-lg-6  ">
 
                 <p class="independence-para  ">
@@ -331,6 +331,31 @@
         </span>
     </a>
 
+    <!-- countdown card  -->
+    <div id="countdown-card" class="px-2">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+            <div class="card" id="count-card">
+                <div class="card-header fs-4 bg-warning">
+                    Independence day meet
+                </div>
+                <div class="card-body">
+                    <div class="card-title fs-5 fw-bold" id="countdown">
+                        Countdown :
+                    </div>
+                    <p class="card-text text-white" id="countdown-note"> "Don't miss the chance to celebrate our
+                        nation's independence! Join us for an unforgettable gathering on August 15th to honor our
+                        freedom and unity."</p>
+                    <div class="d-flex justify-content-end column-gap-3">
+                        <button class="btn" id="close-count-bt">Close</button>
+                        <a href="/register.html" class="btn btn-primary">Register now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script>
         // arrow card function
         window.addEventListener("scroll", function () {
@@ -341,6 +366,47 @@
                 arrow.style.display = "none";
             }
         });
+
+
+
+        //independence day count down function 
+        // Set the date we're counting down to
+        const countdownDate = new Date('August 15, 2024 00:00:00').getTime();
+        // Update the countdown every 1 second
+        const countdownFunction = setInterval(() => {
+            // Get today's date and time
+            const now = new Date().getTime();
+            // Find the distance between now and the countdown date
+            const distance = countdownDate - now;
+            // Time calculations for days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Display the result in the element with id="countdown"
+            document.getElementById('countdown').innerHTML = `Registration ends in : ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            // If the countdown is finished, write some text
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById('countdown').innerHTML = 'Happy Independence Day!';
+            }
+        }, 1000);
+
+
+        // countdownCard display none and hide logic 
+        const countdownCard = document.getElementById("countdown-card")
+        const closeCountBt = document.getElementById("close-count-bt")
+
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                countdownCard.style.display = "block"
+            }, 1000);
+
+        })
+
+        closeCountBt.addEventListener("click", () => {
+            countdownCard.style.display = "none"
+        })
 
     </script>
 
