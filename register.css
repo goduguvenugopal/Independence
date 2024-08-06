@@ -1,0 +1,25 @@
+ /* Styles for large devices */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+     #red-fort-img {
+   width: fit-content;        
+     }
+
+ }
+
+ /* Styles for extra large devices */
+ @media (min-width: 1200px) {
+     #red-fort-img {
+        width: fit-content;
+        
+     }
+
+ }
+
+ /* Styles for extra small devices */
+ @media (max-width: 575.98px) {}
+
+ /* Styles for small devices */
+ @media (min-width: 576px) and (max-width: 767.98px) {}
+
+ /* Styles for medium devices */
+ @media (min-width: 768px) and (max-width: 991.98px) {}
