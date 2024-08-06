@@ -80,3 +80,22 @@
 #spinnerCard{
     display: none;
 }
+
+
+
+.card-img-top{
+    height: 14rem;
+}
+
+#card-for-f{
+    height: 30rem;
+    
+}
+#card-for-f:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    
+}
+.card-text{
+    font-size: 15px;
+}
