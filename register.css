@@ -1,25 +1,49 @@
- /* Styles for large devices */
- @media (min-width: 992px) and (max-width: 1199.98px) {
-     #red-fort-img {
-   width: fit-content;        
-     }
-
- }
-
  /* Styles for extra large devices */
  @media (min-width: 1200px) {
-     #red-fort-img {
-        width: fit-content;
-        
-     }
+  #red-fort-img {
+    width: 700px;
+  }
+
+}
+
+ 
+ /* Styles for large devices */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+   #red-fort-img {
+     width: 700px;
+   }
+ }
+
+  
+ /* Styles for extra small devices */
+ @media (max-width: 575.98px) {
+
+   #red-fort-img {
+     width: 100%;
+   }
 
  }
 
- /* Styles for extra small devices */
- @media (max-width: 575.98px) {}
-
  /* Styles for small devices */
- @media (min-width: 576px) and (max-width: 767.98px) {}
+ @media (min-width: 576px) and (max-width: 767.98px) {
+   #red-fort-img {
+     width: 100%;
+   }
+ }
 
  /* Styles for medium devices */
- @media (min-width: 768px) and (max-width: 991.98px) {}
+ @media (min-width: 768px) and (max-width: 991.98px) {
+   #red-fort-img {
+     width: 100%;
+   }
+
+ }
+
+ .form-control-box{
+  width: 100%;
+  height: 40px;
+  padding-left: 12px;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid rgb(135, 135, 139);
+ }

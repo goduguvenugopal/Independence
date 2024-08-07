@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="script.js" defer></script>
+    <script src="register.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="register.css">
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
@@ -29,7 +29,7 @@
                     <a class="nav-link active  text-white" id="nav-title" aria-current="page"
                         href="/index.html">Home</a>
                     <a class="nav-link  text-white" href="/freedom.html" id="nav-title">Freedom</a>
-                    <a class="nav-link  text-white" href="#" id="nav-title">Contact Us</a>
+                    <a class="nav-link  text-white" href="#footer" id="nav-title">Contact Us</a>
                 </div>
 
             </div>
@@ -40,49 +40,138 @@
         <div class="row px-2 mt-4">
             <div class="text-center">
 
-                <img src="/images/happy.jpg" id="red-fort-img" alt="">
+                <img src="/images/happy.jpg" id="red-fort-img" alt="red-fort" class="rounded">
             </div>
 
-            <h4 class="fw-bold mt-3">India's Independence Day Together </h4>
+            <h4 class="fw-bold mt-3">Celebrate India's Independence Day Together </h4>
             <p class="fs-6">Don’t miss the chance to celebrate our nation's independence! Join us for an unforgettable
                 gathering on August 15th to honor our freedom and unity. Enjoy a day filled with patriotic events, live
                 music, delicious food, and fireworks. Come together with friends and family to commemorate the spirit of
                 independence. We look forward to celebrating with you!"</p>
 
             <p class="fs-6"><b>Register Now to secure your spot and be a part of this memorable day!</b></p>
-            <h4 class="card-title fs-5 fw-bold text-dark" id="countdown1">
+            <h4 class="card-title fs-5 fw-bold text-danger" id="countdown1">
                 Countdown :
             </h4>
         </div>
+
+        <!-- Registration form  -->
+
+        <form id="formFunc" class="row g-3 pt-4 pb-3 needs-validation px-2 " novalidate>
+            <h4 class="fw-bold text-center text-success">Registration</h4>
+            <hr class="mt-1 text-primary border-2">
+
+            <div class="col-md-5 position-relative">
+                <label for="full-name-box" class="form-label">Full name</label>
+                <input type="text" class="form-control-box" id="full-name-box" placeholder="Enter full name">
+            </div>
+
+            
+            <div class="col-md-5 position-relative">
+                <label for="email-box" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                    <input type="email" class="form-control-box" id="email-box" placeholder="Enter email">
+                </div>
+            </div>
+
+            <div class="col-md-5 position-relative">
+                <label for="occupation-box" class="form-label">Occupation</label>
+                <select class="form-control-box" id="occupation-box">
+                    <option selected disabled value="">Choose occupation...</option>
+                </select>
+            </div>
+            
+            <div class="col-md-5 d-flex flex-column justify-content-center">
+                <label class="form-label ">Select gender</label>
+                <div class="radio-card">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input border-2" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input border-2" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-5 position-relative">
+                <label for="state-box" class="form-label">State</label>
+                <select class="form-control-box" id="state-box">
+                    <option selected disabled value="">Choose state...</option>
+                    
+                </select>
+            </div>
+
+            <div class="col-md-5 position-relative">
+                <label for="city-box" class="form-label">City</label>
+                <input type="text" class="form-control-box" id="city-box" placeholder="Enter City">
+            </div>
+
+
+            <div class="col-md-5 position-relative">
+                <label for="pin-box" class="form-label">Pin Code</label>
+                <input type="text" class="form-control-box" id="pin-box" placeholder="Enter Pine code ">
+            </div>
+
+            <div class="col-12  text-center">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
     </div>
 
+    <!-- footer section  -->
+    <footer class="footer-section container-fluid py-4 bg-dark" id="footer">
+        <div class="logo-footer-card container-fluid">
+            <img src="/images/favicon.png" class="logo" alt="independence-day">
+            <a class="navbar-brand site-title" style="font-size: 25px;">Independence</a>
 
-    <script>
+        </div>
+        <hr class="text-white" />
+        <div class="py-2">
+            <h5 class="text-white pb-2">Follow Us</h5>
+            <a href="https://www.instagram.com/venu_gopal_godugu?igsh=OGQ5ZDc2ODk2ZA==" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram face-icon"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg></a>
+            <a href="https://www.facebook.com/profile.php?id=100006681679031&mibextid=ZbWKwL" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook face-icon-2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg></a>
+            <a href="https://twitter.com/i/flow/login " target="_blank" class=""><svg xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" class="bi bi-twitter face-icon" viewBox="0 0 16 16">
+                    <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                </svg></a>
+        </div>
+        <hr class="text-white" />
+        <h6 class="text-white footer-text">
+            &copy; 2024 All Rights Reserved Created By Venu Gopal.
+        </h6>
+        <div class="d-flex justify-content-center pt-1">
+            <h6 class="text-white footer-text">
+                <a class="footer-links">help</a>
+            </h6>
+            <h6 class="text-white footer-text">
+                <a class="footer-links">about us</a>
+            </h6>
+            <h6 class="text-white footer-text">
+                <a href="mailto:www.venuiti97@gmail.com" class="footer-links" target="_blank">contact us</a>
+            </h6>
+            <h6 class="text-white footer-text">
+                <a class="footer-links">privacy policy</a>
+            </h6>
+        </div>
+    </footer>
 
-        //independence day count down function 
-        // Set the date we're counting down to
-        const countdownDate = new Date('August 15, 2024 00:00:00').getTime();
-        // Update the countdown every 1 second
-        const countdownFunction = setInterval(() => {
-            // Get today's date and time
-            const now = new Date().getTime();
-            // Find the distance between now and the countdown date
-            const distance = countdownDate - now;
-            // Time calculations for days, hours, minutes, and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            // Display the result in the element with id="countdown"
-            document.getElementById('countdown1').textContent = `Registration ends in : ${days}d ${hours}h ${minutes}m ${seconds}s`;
-            // If the countdown is finished, write some text
-            if (distance < 0) {
-                clearInterval(countdownFunction);
-                document.getElementById('countdown1').textContent = 'Happy Independence Day!';
-            }
-        }, 1000);
 
-    </script>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
