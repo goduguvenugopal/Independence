@@ -52,7 +52,7 @@
    display: none;
    position: absolute;
    width: 70%;
-   margin-top: 5px;
+   margin-top:0;
    height: 40px;
    padding-left: 12px;
    border-radius: 5px;
@@ -65,6 +65,7 @@
    height: 20rem;
    padding: 5px;
    padding-left: 10px;
+   
  }
 
  .district-name {
@@ -73,6 +74,7 @@
    cursor: pointer;
    margin-top: 0px;
    margin-bottom: 0px;
+   color: rgb(37, 37, 39);
  }
 
  .district-name:hover {
@@ -81,3 +83,20 @@
    border-radius: 3px;
 
  }
+
+ #form-pop-up{
+  position:fixed;
+  background-color:rgba(15, 14, 14, 0.5);
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 1000;
+
+}
+
+
+#spin-sub-bt{
+  display: none;
+}
