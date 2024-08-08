@@ -507,6 +507,7 @@ formFunc.addEventListener("click", async () => {
     nameValidation.style.display = "block";
   } else if (email1 === "") {
     emailValidation.style.display = "block";
+    valid_Email.style.display = "none";
   } else if (occupation1 === "") {
     occuValidation.style.display = "block";
   } else if (state === "") {
@@ -515,9 +516,12 @@ formFunc.addEventListener("click", async () => {
     cityValidation.style.display = "block";
   } else if (!emailRegex.test(email1)) {
     valid_Email.style.display = "block";
+    emailValidation.style.display = "none";
   } else {
     formFunc.style.display = "none";
     spin_sub_bt.style.display = "block";
+
+     
 
     const image =
       "https://media.istockphoto.com/id/2165184709/vector/78th-indian-independence-day-15th-august-social-media-post-poster-banner-web-banner-print.jpg?s=612x612&w=0&k=20&c=a2OQbBwD4eBj1K3VQiJ9Jw45TrNAoRcwjVBXeEQiaqk=";
@@ -582,3 +586,5 @@ Kindly print a hard copy of this email and bring it with you to the event. This 
     }
   }
 });
+
+ 

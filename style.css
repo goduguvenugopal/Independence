@@ -36,13 +36,50 @@
          padding-right: 15px;
      }
 
-     #nav-title {
-         border-bottom: 1.5px solid white;
-     }
+     #nav-title{
+        border: 1.5px solid transparent;
+        height: 37px;
+    }
+ 
+    #nav-title:hover {
+        border-bottom: 1.5px solid white;
+    }
 
-     #nav-title:hover {
-         border: 1.5px solid transparent;
-     }
+
+     #nav-title1 {
+        border: 1.5px solid transparent;
+        height: 37px;
+    }
+
+    #nav-title1:hover {
+        border-bottom: 1.5px solid white;
+    }
+
+    #nav-title2 {
+       border: 1.5px solid transparent;
+       height: 37px;
+   }
+
+   #nav-title2:hover {
+       border-bottom: 1.5px solid white;
+   }
+   #nav-title3{
+       border: 1.5px solid transparent;
+       height: 37px;
+   }
+
+   #nav-title3:hover {
+       border-bottom: 1.5px solid white;
+   }
+   #nav-title4 {
+       border: 1.5px solid transparent;
+       height: 37px;
+   }
+
+   #nav-title4:hover {
+       border-bottom: 1.5px solid white;
+   }
+
 
      .cele-pics {
          width: 100%;
@@ -57,14 +94,47 @@
          padding-right: 15px;
      }
 
-     #nav-title {
+     #nav-title{
+        border: 1.5px solid transparent;
+        height: 37px;
+    }
+ 
+    #nav-title:hover {
+        border-bottom: 1.5px solid white;
+    }
+     #nav-title1 {
          border: 1.5px solid transparent;
          height: 37px;
      }
 
-     #nav-title:hover {
+     #nav-title1:hover {
          border-bottom: 1.5px solid white;
      }
+
+     #nav-title2 {
+        border: 1.5px solid transparent;
+        height: 37px;
+    }
+
+    #nav-title2:hover {
+        border-bottom: 1.5px solid white;
+    }
+    #nav-title3{
+        border: 1.5px solid transparent;
+        height: 37px;
+    }
+
+    #nav-title3:hover {
+        border-bottom: 1.5px solid white;
+    }
+    #nav-title4 {
+        border: 1.5px solid transparent;
+        height: 37px;
+    }
+
+    #nav-title4:hover {
+        border-bottom: 1.5px solid white;
+    }
 
      .cele-pics {
          width: 100%;
