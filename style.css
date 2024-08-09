@@ -358,6 +358,7 @@
  .footer-text {
      font-size: 14px;
      text-transform: capitalize;
+     user-select: none;
  }
 
  .footer-links {

@@ -292,7 +292,7 @@ async function shareFunc() {
   try {
     await navigator.share({
       title:
-        "Hello, I am Venugopal have look Amazing website and know the Indian Independence Day",
+        "Hello, I’m Venugopal. Explore this amazing website and learn more about Indian Independence Day. ",
       url: "https://independencei.netlify.app/",
     });
   } catch (error) {
