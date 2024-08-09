@@ -40,11 +40,6 @@ document.addEventListener('click', function(event) {
   }
 });
 
-
-
-
-
-
 // occupation list
 const occupationList = [
   "Software Developer",
@@ -606,4 +601,16 @@ Kindly print a hard copy of this email and bring it with you to the event. This 
   }
 });
 
- 
+ // share web api function
+
+async function shareFunc() {
+  try {
+    await navigator.share({
+      title:
+        "Hello, I am Venugopal have look Amazing website and know the Indian Independence Day",
+      url: "https://independencei.netlify.app/",
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}

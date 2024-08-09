@@ -82,14 +82,33 @@ eyeClose1.addEventListener("click", () => {
   passInput1.type = "text";
 });
 
-document.addEventListener('click', function(event) {
-    // Get the navbar and the toggler button
-    const navbar = document.getElementById('navbarNavAltMarkup');
-    const navbarToggler = document.querySelector('.navbar-toggler');
+document.addEventListener("click", function (event) {
+  // Get the navbar and the toggler button
+  const navbar = document.getElementById("navbarNavAltMarkup");
+  const navbarToggler = document.querySelector(".navbar-toggler");
 
-    // Check if the navbar is open and the click target is not inside the navbar or the toggler button
-    if (navbar.classList.contains('show') && !navbar.contains(event.target) && !navbarToggler.contains(event.target)) {
-        // Collapse the navbar
-        navbarToggler.click();
-    }
+  // Check if the navbar is open and the click target is not inside the navbar or the toggler button
+  if (
+    navbar.classList.contains("show") &&
+    !navbar.contains(event.target) &&
+    !navbarToggler.contains(event.target)
+  ) {
+    // Collapse the navbar
+    navbarToggler.click();
+  }
 });
+
+
+// share web api function
+
+async function shareFunc() {
+  try {
+    await navigator.share({
+      title:
+        "Hello, I am Venugopal have look Amazing website and know the Indian Independence Day",
+      url: "https://independencei.netlify.app/",
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}

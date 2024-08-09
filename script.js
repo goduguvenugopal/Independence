@@ -269,7 +269,7 @@ const fighters = [
 const indiFightersCard = document.getElementById("indi-fighters-Card");
 
 window.addEventListener("load", () => {
-  let htmlContent = "";
+ 
   fighters.map((item) => {
     indiFightersCard.innerHTML += `<div class="col col-md-6 col-lg-4 col-xl-3">
         <div class="card shadow" style="width: 18.5rem;" id="card-for-f">
@@ -282,5 +282,20 @@ window.addEventListener("load", () => {
       </div>`;
   });
 
-  console.log(htmlContent);
+  
 });
+
+
+// share web api function
+
+async function shareFunc() {
+  try {
+    await navigator.share({
+      title:
+        "Hello, I am Venugopal have look Amazing website and know the Indian Independence Day",
+      url: "https://independencei.netlify.app/",
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}
