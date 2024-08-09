@@ -149,6 +149,18 @@
      padding-right: 10px;
  }
 
+/* login form styling  */
+
+.eye-open{
+    position: absolute;
+    right: 2rem;
+    bottom: 5.8rem;
+    cursor: pointer;
+}
+
+
+ 
+
  /* typing text card styling */
 
  .typing-text-main-card {
@@ -433,3 +445,6 @@
         width: 30rem;
     }
  }
+
+
+ 

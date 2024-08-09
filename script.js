@@ -8,6 +8,22 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+// navbar toggle function 
+document.addEventListener('click', function(event) {
+  // Get the navbar and the toggler button
+  const navbar = document.getElementById('navbarNavAltMarkup');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  // Check if the navbar is open and the click target is not inside the navbar or the toggler button
+  if (navbar.classList.contains('show') && !navbar.contains(event.target) && !navbarToggler.contains(event.target)) {
+      // Collapse the navbar
+      navbarToggler.click();
+  }
+});
+
+
+
 // freedom fighters Array list
 const freedomFighters = [
   "Mahatma Gandhi",
