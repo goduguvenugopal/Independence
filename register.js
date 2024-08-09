@@ -606,7 +606,7 @@ Kindly print a hard copy of this email and bring it with you to the event. This 
 async function shareFunc() {
   try {
     await navigator.share({
-      title:
+      text:
         "Hello, I’m Venugopal. Explore this amazing website and learn more about Indian Independence Day.",
       url: "https://independencei.netlify.app/",
     });
