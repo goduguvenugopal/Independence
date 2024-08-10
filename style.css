@@ -369,7 +369,7 @@
  }
 
  .face-icon-2 {
-     color: white;
+     color:blue;
      height: 25px;
      width: 25px;
      margin-left: 25px;
@@ -377,18 +377,18 @@
  }
 
  .face-icon {
-     color: white;
+     color:blue;
      height: 25px;
      width: 25px;
  }
 
  .face-icon-2:hover {
-     color: blue;
+     color:white;
  }
 
 
  .face-icon:hover {
-     color: blue;
+     color:white;
  }
 
 
